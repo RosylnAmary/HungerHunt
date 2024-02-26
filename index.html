@@ -1,0 +1,568 @@
+<!-- ważne zapytać Kube o podpisy w galerii -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="js/bootstrap.js" />
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif:wght@300;400;600&family=Rubik:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/media-style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+		<title>Hunger hunt</title>
+	</head>
+	<body class="text-center">
+		<!-- NAVIGATION -->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-sm">
+				<img src="./img/logo-nowe.png" class="nav-logo" />
+				<div class="navbar-menu">
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">HOME</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#time">RESERVATION</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#menu">MENU</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									PAGES
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#menu">MENU</a></li>
+									<li><a class="dropdown-item" href="#time">RESERVATION</a></li>
+									<li>
+										<a class="dropdown-item" href="#blog">BLOG</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">GET&nbsp;PRO</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- HEADER -->
+
+		<header>
+			<div class="container p-2" style="min-height: 200px">
+				<h1 class="title">Welcome to</h1>
+				<h2>HUNGER HUNT</h2>
+				<img src="img/separator.png" class="separator-heading img-fluid" />
+				<p class="banner-text">Get the freshest ingredients from hunger hunt</p>
+				<form class="row my-5 formularz">
+					<div class="col">
+						<label for="date" class="visually-hidden"></label>
+						<input
+							type="date"
+							class="form-control"
+							id="inputPassword2"
+							placeholder="Password"
+						/>
+					</div>
+					<div class="col">
+						<label for="time" class="visually-hidden"></label>
+						<input
+							type="time"
+							class="form-control"
+							id="inputPassword2"
+							placeholder="Password"
+						/>
+					</div>
+					<div class="col">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>Number of people</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+							<option value="4">Four</option>
+							<option value="5">Five</option>
+							<option value="6">Six</option>
+							<option value="7">Seven</option>
+							<option value="8">Eight</option>
+						</select>
+					</div>
+					<div class="col">
+						<button type="submit" class="btn btn-primary mb-3">BOOK NOW</button>
+					</div>
+				</form>
+			</div>
+		</header>
+
+		<!--   ABOUT -->
+		<section>
+			<div class="about container d-lg-flex justify-content-between p-0">
+				<div class="desser">
+					<img src="img/desser.png" />
+				</div>
+				<div
+					class="about-text d-flex flex-column justify-content-center align-items-center"
+				>
+					<h3 class="title">About us</h3>
+					<h4>THE MOST AWARDED RESTAURANT</h4>
+					<img
+						class="separator separator-sections"
+						src="img/separator-about.png"
+					/>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+						tempora aliquid enim! Consequuntur quaerat praesentium illo enim
+						dolor, accusamus error quibusdam tempora debitis! Reprehenderit
+						aliquid expedita tempora temporibus eius quia!
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- 	OPENING TIME  -->
+		<section class="opening-section" id="time">
+			<div class="opening container" style="min-height: 200px">
+				<div
+					class="opening-text d-flex flex-column justify-content-center align-items-center"
+				>
+					<h3>Time</h3>
+					<h4>OPEN AT</h4>
+					<img src="img/separator.png" class="separator separator-sections" />
+					<div class="opening-time d-flex">
+						<div>
+							<p class="opening-days">MONDAY-WEDNESDAY</p>
+							<div class="opening-hours">
+								<p>7am - 11am (Breakfast)</p>
+								<p>11am - 10pm (Lunch/Dinner)</p>
+							</div>
+						</div>
+						<div>
+							<p class="opening-days">MONDAY-WEDNESDAY</p>
+							<div class="opening-hours">
+								<p>7am - 11am (Breakfast)</p>
+								<p>11am - 10pm (Lunch/Dinner)</p>
+							</div>
+						</div>
+					</div>
+					<p class="contact">+15 12456785 23</p>
+					<button class="btn-booking">BOOK YOUR TABLE</button>
+					<div class="book visually-hidden">
+						<button class="btn-close btn-close-white"></button>
+						<p class="book-heading">BOOK YOUR TABLE</p>
+						<form class="row my-5 formularz">
+							<div class="col">
+								<label for="date" class="visually-hidden"></label>
+								<input
+									type="date"
+									class="form-control"
+									id="inputPassword2"
+									placeholder="Password"
+								/>
+							</div>
+							<div class="col">
+								<label for="time" class="visually-hidden"></label>
+								<input
+									type="time"
+									class="form-control"
+									id="inputPassword2"
+									placeholder="Password"
+								/>
+							</div>
+							<div class="col">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>Number of people</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+									<option value="4">Four</option>
+									<option value="5">Five</option>
+									<option value="6">Six</option>
+									<option value="7">Seven</option>
+									<option value="8">Eight</option>
+								</select>
+							</div>
+							<div class="col">
+								<button type="submit" class="btn btn-primary mb-3">
+									BOOK NOW
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--   DISHES  -->
+		<section id="menu">
+			<div class="container">
+				<h3>Discover</h3>
+				<h4>OUR MENU</h4>
+				<img
+					class="separator separator-sections"
+					src="img/separator-about.png"
+				/>
+				<div class="dishes d-md-flex">
+					<div class="card">
+						<img src="img/tomatoes.png" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">STARTERS</h5>
+							<p class="card-text">
+								This delicious dish will certainly satisfy the palates of the
+								most demanding foodies
+							</p>
+							<a href="#" class="btn btn-cards">See menu</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/salmon.png" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">MAIN COURSES</h5>
+							<p class="card-text">
+								This delicious dish will certainly satisfy the palates of the
+								most demanding foodies.
+							</p>
+							<a href="#" class="btn btn-cards">See menu</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/ice.png" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">DESSERTS</h5>
+							<p class="card-text">
+								This delicious dish will certainly satisfy the palates of the
+								most demanding foodies
+							</p>
+							<a href="#" class="btn btn-cards">See menu</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- DISCOVER -->
+		<section>
+			<div class="discover container">
+				<h3>Discover</h3>
+				<h4>OUR BREAKFAST</h4>
+				<img
+					class="separator separator-sections"
+					src="img/separator-about.png"
+				/>
+				<div
+					class="starters d-md-flex justify-content-between align-items-center"
+				>
+					<div class="starters-c col-12 row">
+						<div class="starter col-12 col-lg-6 d-flex">
+							<img src="img/eggs1.png" class="starter-img" />
+							<div class="starter-text">
+								<p class="starter-name">Soft-Boiled Organic Egg</p>
+								<p class="starterr-description">with soldiers</p>
+							</div>
+							<div class="starter-price">
+								<p>$5.00</p>
+							</div>
+						</div>
+						<div class="starter col-12 col-lg-6 d-flex">
+							<img src="img/eggs.jpg" class="starter-img" />
+							<div class="starter-text">
+								<p class="starter-name">Scrambled Eggs in Puff Pastry</p>
+								<p class="starterr-description">with wild mushrooms</p>
+							</div>
+							<div class="starter-price">
+								<p>$5.00</p>
+							</div>
+						</div>
+						<div class="starter col-12 col-lg-6 d-flex">
+							<img src="img/eggs1.png" class="starter-img" />
+							<div class="starter-text">
+								<p class="starter-name">Eggs Any Style</p>
+								<p class="starterr-description">with homefries & toast</p>
+							</div>
+							<div class="starter-price">
+								<p>$5.00</p>
+							</div>
+						</div>
+						<div class="starter col-12 col-lg-6 d-flex">
+							<img src="img/eggs.jpg" class="starter-img" />
+							<div class="starter-text">
+								<p class="starter-name">Soft-Boiled Organic Egg</p>
+								<p class="starterr-description">with soldiers</p>
+							</div>
+							<div class="starter-price">
+								<p>$5.00</p>
+							</div>
+						</div>
+						<div class="starter col-12 col-lg-6 d-flex">
+							<img src="img/eggs1.png" class="starter-img" />
+							<div class="starter-text">
+								<p class="starter-name">Eggs Norwegian</p>
+								<p class="starterr-description">with homefries</p>
+							</div>
+							<div class="starter-price">
+								<p>$5.00</p>
+							</div>
+						</div>
+						<div class="starter col-12 col-lg-6 d-flex">
+							<img src="img/eggs.jpg" class="starter-img" />
+							<div class="starter-text">
+								<p class="starter-name">Soft-Boiled Organic Egg</p>
+								<p class="starterr-description">with soldiers</p>
+							</div>
+							<div class="starter-price">
+								<p>$5.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="btn btn-menu">VIEW FULL MENU</button>
+			</div>
+		</section>
+
+		<!-- Blog -->
+		<section id="blog">
+			<div class="Blog container">
+				<h3>Check</h3>
+				<h4>OUR BLOG</h4>
+				<img
+					class="separator separator-sections"
+					src="img/separator-about.png"
+				/>
+				<div class="blogs d-flex">
+					<div class="blog-c">
+						<div class="blog-img-box">
+							<img src="img/chicken.jpg" class="blog-img" />
+						</div>
+						<p class="blog-heading">WE LOVE IT WHEN YOU LOVE IT</p>
+						<p class="blog-subtitle">
+							January 29, 2018 by <span class="author">Gustave Berneit</span> 2
+							comments
+						</p>
+						<p class="blog-description">
+							How did the hand pies look? Did you love the brownies? How many
+							choux did you eat in one sitting? After a gorgeous selection of
+							our favorites for a client to send as a new year’s gift.
+							<a class="blog-a" href="#">Continue Reading...</a>
+						</p>
+					</div>
+					<div class="blog-c">
+						<div class="blog-img-box">
+							<img src="img/salad2.png" class="blog-img" />
+						</div>
+						<p class="blog-heading">HOW MY LOVE OF SWEET TURNED</p>
+						<p class="blog-subtitle">
+							March 30, 2018 by <span class="author">Gustave Berneit</span> 2
+							comments
+						</p>
+						<p class="blog-description">
+							How did the hand pies look? Did you love the brownies? How many
+							choux did you eat in one sitting? After a gorgeous selection of
+							our favorites for a client to send as a new year’s gift.
+							<a class="blog-a" href="#">Continue Reading...</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Gallery -->
+		<section>
+			<h3>Discover</h3>
+			<h4>OUR GALLERY</h4>
+			<img class="separator separator-sections" src="img/separator-about.png" />
+			<div class="gallery grid">
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="img-box-gallery">
+							<img src="img/asparagus.png" alt="" />
+							<p class="img-text-gallery">Main dish</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="img-box-gallery">
+							<img src="img/asparagus.png" alt="" />
+							<p class="img-text-gallery">Main dish</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="img-box-gallery">
+							<img src="img/asparagus.png" alt="" />
+							<p class="img-text-gallery">Main dish</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="img-box-gallery">
+							<img src="img/asparagus.png" alt="" />
+							<p class="img-text-gallery">Main dish</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="img-box-gallery">
+							<img src="img/asparagus.png" alt="" />
+							<p class="img-text-gallery">Main dish</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="img-box-gallery">
+							<img src="img/asparagus.png" alt="" />
+							<p class="img-text-gallery">Main dish</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="img-box-gallery">
+							<img src="img/asparagus.png" alt="" />
+							<p class="img-text-gallery">Main dish</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="img-box-gallery">
+							<img src="img/asparagus.png" alt="" />
+							<p class="img-text-gallery">Main dish</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn btn-gallery">VIEW GALLERY</button>
+		</section>
+
+		<!-- FOOTER -->
+
+		<footer>
+			<div class="footer-container">
+				<div class="container footer-box d-flex justify-content-between">
+					<div class="footer-c d-flex flex-column">
+						<p class="footer-heading">CONTACT INFO</p>
+						<p>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+								/>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+								/>
+							</svg>
+							PO Box 1612 Collin Street, NYC
+						</p>
+						<p>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+								/>
+							</svg>
+							(+801) - 2345 - 6789
+						</p>
+						<p>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+								/>
+							</svg>
+							support@hungerhunt.com
+						</p>
+					</div>
+					<div class="footer-c d-flex flex-column">
+						<p class="footer-heading">SUPPORT</p>
+						<a href="#" class="footer-a">FAQ</a>
+						<a href="#" class="footer-a">Delivery</a>
+						<a href="#" class="footer-a">Payment</a>
+						<a href="#" class="footer-a">Options</a>
+						<a href="#" class="footer-a">Refunds</a>
+					</div>
+					<div class="footer-c d-flex flex-column">
+						<p class="footer-heading">SHOP</p>
+						<a href="#" class="footer-a">Non-Veg</a>
+						<a href="#" class="footer-a">Veg</a>
+						<a href="#" class="footer-a">Salads</a>
+						<a href="#" class="footer-a">Desserts</a>
+						<a href="#" class="footer-a">Appetizers</a>
+					</div>
+					<div class="footer-c d-flex flex-column">
+						<p class="footer-heading">INFORMATION</p>
+						<a href="#" class="footer-a">Home</a>
+						<a href="#" class="footer-a">About Us</a>
+						<a href="#" class="footer-a">Blogs</a>
+						<a href="#" class="footer-a">Contact US</a>
+						<div class="social">
+							<a href="#" class="footer-social"
+								><img src="img/fbfooter.png"
+							/></a>
+							<a href="#" class="footer-social"
+								><img src="img/pinterestfooter.png"
+							/></a>
+							<a href="#" class="footer-social"
+								><img src="img/tweeterfooter.png"
+							/></a>
+							<a href="#" class="footer-social"
+								><img src="img/instfooter.png"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-footer"></div>
+		</footer>
+		<!-- JAVA SCRIPT -->
+		<script src="./js/script.js"></script>
+	</body>
+</html>
